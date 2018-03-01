@@ -1,6 +1,6 @@
 # devmeetup
 
-> A Vue.js project
+> A Vue.js project. Deployed on Heroku
 
 ## Build Setup
 
