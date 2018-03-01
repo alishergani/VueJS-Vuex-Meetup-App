@@ -1,16 +1,17 @@
 <template>
 	<v-container>
+<!--     
 		<v-layout row wrap mb-2>
 			<v-flex xs12 sm6 text-sm-center text-lg-center>
 				<v-btn large color="success" to="/meetups"
-				>Show All Meetups</v-btn>
+				>Meetups List</v-btn>
 			</v-flex>
 			<v-flex xs12 sm6 text-sm-center text-lg-center>
 				<v-btn large color="success" to="/newmeetup"
-				>Create Meetup</v-btn>
+				>Meetup Create</v-btn>
 			</v-flex>
 		</v-layout>
-    
+     -->
     <v-layout>
 			<v-flex>
 			  <v-carousel hide-delimiters="true">
@@ -62,33 +63,5 @@
     color: white;
     font-size: 2em;
     padding: 20px;
-  }
-  .fade-enter-active {
-    animation: slide .2s reverse;
-  }
-  .fade-leave-active {
-    animation: slide .2s;
-  }
-  @keyframes slide {
-    0% {
-      line-height: 1.5;
-      opacity: 1;
-    }
-    25% {
-      line-height: 1.3;
-      opacity: .8;
-    }
-    50% {
-      line-height: 1;
-      opacity: .5;
-    }
-    75% {
-      line-height: .7;
-      opacity: .3;
-    }
-    100% {
-      line-height: 0;
-      opacity: 0;
-    }
   }
 </style>

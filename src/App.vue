@@ -18,7 +18,6 @@
     </v-navigation-drawer>
     <v-toolbar
       dark
-      id="toolbar" 
       :class="{
         'success': !path, 
         'toolbar--absolute transparent elevation-0': path
@@ -27,7 +26,7 @@
         @click.stop="sideNav = !sideNav"
         class="hidden-md-and-ups"></v-toolbar-side-icon>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor: pointer">DevMeetup</router-link>
+        <router-link to="/" tag="span" style="cursor: pointer">Meetup</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down ">
@@ -53,17 +52,25 @@
       return {
         sideNav: false,
         menuItems: [
-          {icon: 'supervisor_account', title: 'Meetups', link: '/meetups'},
-          {icon: 'room', title: 'Crete Meetup', link: '/newmeetup'},
-          {icon: 'person', title: 'Cool Background', link: '/coolbackground'}
-        ],
-        toolbar: document.querySelector('#toolbar')
+          {
+            icon: 'supervisor_account', 
+            title: 'Meetups', 
+            link: '/meetups'
+          },
+          {
+            icon: 'room', 
+            title: 'Crete Meetup', 
+            link: '/newmeetup'
+          },
+          {
+            icon: 'person', 
+            title: 'Cool Background', 
+            link: '/coolbackground'
+          }
+        ]
       }
     },
     computed: {
-      // absolute() { 
-      //   return 
-      // },
       path() {
         return this.$route.path == '/coolbackground' ? true : false
       }
