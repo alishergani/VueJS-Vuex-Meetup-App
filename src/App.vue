@@ -58,7 +58,7 @@
             link: '/meetups'
           },
           {
-            icon: 'room', 
+            icon: 'room',
             title: 'Crete Meetup', 
             link: '/newmeetup'
           },
